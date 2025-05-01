@@ -1,0 +1,198 @@
+%------------------------
+% Ethan's Résumé Template
+% Author: necusjz
+% License: CC-BY-4.0
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+% font options
+\usepackage{newpxtext}
+\linespread{1.05}  % palladio needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}  % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% custom commands
+\newcommand{\cvitem}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvheadingstart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\cvheadingend}{\end{itemize}}
+\newcommand{\cvitemstart}{\begin{itemize}[label=\textopenbullet]\justifying}
+\newcommand{\cvitemend}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\cvskill}[2]{
+  \textcolor{black}{\textbf{#1}}\hfill
+  \foreach \x in {1,...,5}{%
+    \space{\ifnumgreater{\x}{#2}{\color{black!80!white!20}}{\color{black}}\faSquare}}\par%
+  \vspace{-2pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\footnotesize$\bullet$}}$}
+
+\begin{document}
+
+% contact information
+\begin{center}
+  \textbf{\LARGE\scshape Yunseong Kim} \\
+  \vspace{1pt}\small
+  \href{mailto:p4ranlee@gmail.com}{\textbf{Email}}
+  $\ \diamond\ $ p4ranlee@gmail.com
+  \textbf{Phone}
+  $\ \diamond\ $+82 10-3081-9242
+  \href{https://github.com/yskelg}{\textbf{GitHub}}
+  \href{https://www.linkedin.com/in/yunseong-kim-linux-kernel/}{\textbf{LinkedIn}}
+\end{center}
+
+\section{Professional Experience}
+\cvheadingstart
+  \cvheading
+    {Ericsson}{Seoul, South Korea}
+    {System Software Developer}{07/2023 - Present}
+  \cvitemstart
+    \cvitem{Mobility and Control Development Team}
+  \cvitemend
+
+  \cvheading
+    {AhnLab}{Bundang-gu, South Korea}
+    {System Software Developer}{01/2022 - 06/2023}
+  \cvitemstart
+    \cvitem{EDR(Endpoint Detection and Response) Development Team}
+  \cvitemend
+
+  \cvheading
+    {Innowireless}{Bundang-gu, South Korea}
+    {Software Developer}{8/2018 - 12/2021}
+  \cvitemstart
+    \cvitem{Server Software Development Team}
+\cvitemend
+
+\cvheadingend
+
+\section{Education}
+\cvheadingstart
+  \cvheading
+    {Korea Aerospace University}{Goyang, South Korea}
+    {B.S. in Electronics and Avionics Engineering}{03/2010 - 02/2018}
+  \cvheading
+    {Linux Foundation}{Online}
+    {LFD441: Security and the Linux Kernel}{7/2024 - 7/2024}
+   \cvheading
+    {IBM Z Day Program}{Online}
+    {IBM Z Security Certificate}{10/2024 - 10/2024}
+\cvheadingend
+
+\section{Key Performances}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{\textbf{Linux Kernel Security Development}}
+  \begin{itemize}
+    \item Developed security modules using \textbf{LSM}, \textbf{kprobe}, and \textbf{eBPF}
+    \item Profiled and optimized CPU, memory, and I/O performance with \textbf{perf tools}
+  \end{itemize}
+
+\cvitem{\textbf{\href{https://lore.kernel.org/all/?q=Yunseong+Kim}{Upstream Linux Kernel Contributions}}}
+\cvitem{%
+  \begin{itemize}
+    \item Reported multiple security vulnerabilities and submitted and reviewed patches for the mainline kernel
+    \item Performed backporting of vulnerability fixes to stable Linux kernel releases
+  \end{itemize}
+}
+
+ \cvitem{\href{http://perf.wiki.kernel.org/}{\textbf{Maintainer of the Linux perf tools wiki}};} {\textbf{uftrace contributions}: \href{https://github.com/namhyung/uftrace/pulls?q=author\%3Aparanlee}{\#1}, \href{https://github.com/namhyung/uftrace/pulls?q=author\%3Ayskelg}{\#2}}
+
+  \cvitem{\textbf{Security Analysis in 5G Core Systems}}
+  \begin{itemize}
+    \item Analyzed vulnerabilities from \textbf{ASN.1 codec} to \textbf{5G NGAP protocol handling}
+  \end{itemize}
+
+  \cvitem{\textbf{Cloud-Native Distributed Systems}}
+  \begin{itemize}
+    \item Developed large-scale distributed 5G applications using \textbf{Erlang/OTP}
+  \end{itemize}
+
+\cvitemend
+\cvheadingend
+
+\section{Technical Skills}
+\cvheadingstart
+\item
+\cvitemstart
+    \cvitem{Linux Kernel Security Module Development using QEMU, LSM, crash tools, ftrace, perf tools and Wireshark}
+    \cvitem{Strong C/C++ programming and debugging skills}
+    \cvitem{Fuzzing with syzkaller and AFL++; source control with Git; CI/CD with Jenkins; scripting with Erlang/OTP, Python, and shell scripts}
+    \cvitem{\textbf{Linux Kernel CI/CD and Verification Automation}}
+    \begin{itemize}
+      \item Managed multiple \textbf{Jenkins} pipelines on virtualized infrastructures: \textbf{VMware ESXi}, \textbf{vSphere}
+    \end{itemize}
+
+\cvitemend
+\cvheadingend
+
+\section{Talks \& Publications}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{Speaker at \textbf{SOSS Community Day Japan 2024}: \textit{Head First Reporting of Linux Kernel CVEs} \\ — Presented Linux kernel CVE discovery using syzkaller, including KSMBD and s390x vulnerabilities}
+  \cvitem{Speaker at \textbf{DebConf24}: \textit{perf In Action} \\ — Shared practical use cases and techniques for Linux perf tools}
+  \cvitem{Project on \textbf{Hackster.io}: \href{https://www.hackster.io/p4ranlee/zybo-z7-20-webcam-on-the-petalinux-c28709}{ZYBO Z7-20 Webcam on the Petalinux Project} \\ — Demonstrated webcam driver integration on Xilinx PetaLinux using ZYBO Z7-20 board}
+\cvitemend
+\cvheadingend
+
+
+\end{document}
