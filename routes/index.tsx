@@ -45,7 +45,7 @@ function Hero() {
           />
         </h1>
         <p class="text-xl mt-4">
-          I am an contributor to the{" "}
+          I am a contributor to the{" "}
           <a href="https://lore.kernel.org/all/?q=Yunseong+Kim">Linux kernel</a>
           {" "}
           and{" "}
