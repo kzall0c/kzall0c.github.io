@@ -9,11 +9,11 @@ function MetaTags(
     <>
       {/* Primary Meta Tags */}
       <title>
-        ${credentials.name} - Experienced Web Developer | Full Portfolio
+        ${credentials.name} - Linux Kernel Developer | Full Portfolio
       </title>
       <meta
         name="title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Linux Kernel Developer | Full Portfolio`}
       />
       <meta
         name="description"
@@ -25,7 +25,7 @@ function MetaTags(
       <meta property="og:url" content={`${url}`} />
       <meta
         property="og:title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Linux Kernel Developer | Full Portfolio`}
       />
       <meta
         property="og:description"
@@ -41,7 +41,7 @@ function MetaTags(
       <meta property="twitter:url" content={`${url}`} />
       <meta
         property="twitter:title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Linux Kernel Developer | Full Portfolio`}
       />
       <meta
         property="twitter:description"
