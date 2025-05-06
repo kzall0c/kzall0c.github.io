@@ -1,4 +1,4 @@
-<kbd><img src="static/img/readme.png" alt="portfolio hero section"/></kbd>
+<kbd><img src="static/meta-image.png" alt="portfolio hero section"/></kbd>
 
 This is an open source developer portfolio made using
 [ThreeJS](https://threejs.org/) and [denoland fresh](https://fresh.deno.dev/).

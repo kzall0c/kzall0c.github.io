@@ -33,7 +33,7 @@ function MetaTags(
       />
       <meta
         property="og:image"
-        content={`${url}meta-image.webp`}
+        content={`${url}meta-image.png`}
       />
 
       {/* Twitter */}
@@ -49,7 +49,7 @@ function MetaTags(
       />
       <meta
         property="twitter:image"
-        content={`${url}meta-image.webp`}
+        content={`${url}meta-image.png`}
       />
 
       {/* Meta Tags Generated with https://metatags.io */}
