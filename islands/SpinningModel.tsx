@@ -37,7 +37,6 @@ class SpinningModel extends Component {
     loader.load(
       "../scene.gltf", // replace with the path to your model
       function (gltf: THREE.GLTF & { scene: THREE.Scene }) {
-        model = gltf.scene;
         scene.add(gltf.scene);
 
         // rotate to align the model
