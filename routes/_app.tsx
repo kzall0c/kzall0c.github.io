@@ -17,7 +17,7 @@ function MetaTags(
       />
       <meta
         name="description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of linux opensource projects. Specializing in linux kernel security and debugging.`}
       />
 
       {/* Open Graph / Facebook */}
@@ -29,7 +29,7 @@ function MetaTags(
       />
       <meta
         property="og:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of linux opensource projects. Specializing in linux kernel security and debugging.`}
       />
       <meta
         property="og:image"
@@ -45,7 +45,7 @@ function MetaTags(
       />
       <meta
         property="twitter:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of linux opensource projects. Specializing in linux kernel security and debugging.`}
       />
       <meta
         property="twitter:image"
