@@ -60,6 +60,69 @@ function Hero() {
   );
 }
 
+interface Project {
+  title: string;
+  description: string;
+  link: string;
+  type: string;
+  icon: string;
+}
+
+function Projects() {
+  const projects: Project[] = [
+    {
+      title: "Linux Kernel",
+      description: "Linux Kernel contributor & vulnerability researcher.",
+      link:
+        "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?qt=grep&q=Yunseong+Kim",
+      type: "Open Source",
+      icon: "skill-icons:linux-light",
+    },
+    {
+      title: "Perf tools wiki.",
+      description:
+        "Maintaining the Linux Perf tools Wikipedia based on Markdown.",
+      link: "https://perf.wiki.kernel.org/",
+      type: "Open Source",
+      icon: "arcticons:prtg-tools",
+    },
+  ];
+
+  return (
+    <section class="p-4 my-8">
+      <h1 class="text-3xl font-bold text-primary text-center mb-4">
+        Projects and Contributions
+      </h1>
+      <div class="flex flex-wrap justify-center items-center gap-2">
+        {projects.map((project) => (
+          <div class="card max-w-96">
+            <div class="card-body p-4">
+              <h2 class="card-title">
+                <Icon
+                  class="w-6 h-6"
+                  icon={project.icon}
+                  width="none"
+                  height="none"
+                />
+                {project.title}
+                <span class="badge badge-ghost ml-auto">{project.type}</span>
+              </h2>
+              <p>{project.description}</p>
+              <a
+                href={project.link}
+                target="_blank"
+                class="btn btn-primary text-base-100"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 interface Experience {
   title: string;
   company: string;
@@ -136,69 +199,6 @@ function Experience() {
         ))}
       </div>
       <h1 class="text-3xl font-bold text-primary">Work Experience</h1>
-    </section>
-  );
-}
-
-interface Project {
-  title: string;
-  description: string;
-  link: string;
-  type: string;
-  icon: string;
-}
-
-function Projects() {
-  const projects: Project[] = [
-    {
-      title: "Linux Kernel",
-      description: "Linux Kernel contributor & vulnerability researcher.",
-      link:
-        "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?qt=grep&q=Yunseong+Kim",
-      type: "Open Source",
-      icon: "skill-icons:linux-light",
-    },
-    {
-      title: "Perf tools wiki.",
-      description:
-        "Maintaining the Linux Perf tools Wikipedia based on Markdown.",
-      link: "https://perf.wiki.kernel.org/",
-      type: "Open Source",
-      icon: "arcticons:prtg-tools",
-    },
-  ];
-
-  return (
-    <section class="p-4 my-8">
-      <h1 class="text-3xl font-bold text-primary text-center mb-4">
-        Projects and Contributions
-      </h1>
-      <div class="flex flex-wrap justify-center items-center gap-2">
-        {projects.map((project) => (
-          <div class="card max-w-96">
-            <div class="card-body p-4">
-              <h2 class="card-title">
-                <Icon
-                  class="w-6 h-6"
-                  icon={project.icon}
-                  width="none"
-                  height="none"
-                />
-                {project.title}
-                <span class="badge badge-ghost ml-auto">{project.type}</span>
-              </h2>
-              <p>{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                class="btn btn-primary text-base-100"
-              >
-                View Project
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
     </section>
   );
 }
