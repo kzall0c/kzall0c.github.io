@@ -32,7 +32,7 @@ export default function AppBar() {
     },
     {
       name: "Linux Kernel Mailing List",
-      url: "https://lore.kernel.org/all/?q=Yunseong+Kim",
+      url: "https://lore.kernel.org/all/?q=Yunseong",
       icon: "fa-brands:linux",
     },
     {

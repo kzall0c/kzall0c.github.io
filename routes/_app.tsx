@@ -66,7 +66,7 @@ export default function App({ Component }: PageProps) {
     },
     {
       name: "Linux Kernel Mailing List",
-      url: "https://lore.kernel.org/all/?q=Yunseong+Kim",
+      url: "https://lore.kernel.org/all/?q=Yunseong",
       icon: "fa-brands:linux",
     },
     {

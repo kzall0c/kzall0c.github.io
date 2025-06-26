@@ -46,8 +46,12 @@ function Hero() {
         </h1>
         <p class="text-xl mt-4">
           I am a contributor to the{" "}
-          <a href="https://lore.kernel.org/all/?q=Yunseong+Kim">Linux kernel</a>
-          {" "}
+          <a
+            style={{ fontWeight: "bold" }}
+            href="https://lore.kernel.org/all/?q=Yunseong"
+          >
+            Linux kernel
+          </a>{" "}
           and{" "}
           <a href="https://github.com/namhyung/uftrace/pulls?q=author%3Ayskelg">
             uftrace
@@ -74,7 +78,7 @@ function Projects() {
       title: "Linux Kernel",
       description: "Linux Kernel contributor & vulnerability researcher.",
       link:
-        "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?qt=grep&q=Yunseong+Kim",
+        "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?qt=grep&q=Yunseong",
       type: "Open Source",
       icon: "skill-icons:linux-light",
     },
