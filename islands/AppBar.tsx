@@ -78,6 +78,7 @@ export default function AppBar() {
           <button
             class="btn"
             aria-label="change Theme"
+            type="submit"
             onClick={() => toggleTheme(themes)}
           >
             <Icon
