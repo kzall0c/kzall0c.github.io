@@ -42,7 +42,7 @@ export default function AppBar() {
     },
     {
       name: "Youtube",
-      url: "https://www.youtube.com/@linux-kernel-contribute",
+      url: "https://www.youtube.com/@linux-kernel-contributor",
       icon: "fa-brands:youtube",
     },
     {

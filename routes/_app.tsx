@@ -76,7 +76,7 @@ export default function App({ Component }: PageProps) {
     },
     {
       name: "Youtube",
-      url: "https://www.youtube.com/@linux-kernel-contribute",
+      url: "https://www.youtube.com/@linux-kernel-contributor",
       icon: "fa-brands:youtube",
     },
     {
