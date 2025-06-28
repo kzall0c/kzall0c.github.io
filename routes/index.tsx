@@ -41,7 +41,7 @@ function Hero() {
               `"Hello! I'm Yunseong."`,
               `"I'm passionate about contributing to open source."`,
             ]}
-            autoStart={true}
+            autoStart
           />
         </h1>
         <p class="text-xl mt-4">
@@ -53,7 +53,7 @@ function Hero() {
             Linux kernel
           </a>{" "}
           and{" "}
-          <a href="https://github.com/namhyung/uftrace/pulls?q=author%3Ayskelg">
+          <a href="https://github.com/namhyung/uftrace/pulls?q=author%3Akzall0c+">
             uftrace
           </a>{" "}
           open-source project.
@@ -331,7 +331,6 @@ function Values() {
 
   return (
     <>
-      <Wave flip={false} />
       <section class="p-4 flex justify-center items-center gap-4 flex-wrap bg-primary">
         {values.map((value, i) => (
           <div
@@ -352,7 +351,7 @@ function Values() {
           </div>
         ))}
       </section>
-      <Wave flip={true} />
+      <Wave flip />
     </>
   );
 }
